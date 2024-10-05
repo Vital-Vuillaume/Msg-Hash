@@ -8,7 +8,11 @@ const hash = document.querySelector(".hash");
 const txt = document.querySelector(".txt");
 const txtHash = document.querySelector(".txtHash");
 
-let hashValue
+const copieHash = document.querySelector(".a");
+const copieTxt = document.querySelector(".b");
+const copieTxtHash = document.querySelector(".c");
+
+let hashValue;
 
 hash.addEventListener("input", function() {
   hashValue = hash.value;
@@ -37,3 +41,25 @@ txtHash.addEventListener("input", function() {
     txt.value = encryptDecrypt(decrypted, hashValue);
   } catch {}
 });
+
+function copyToClipboard(element, text) {
+  element.classList.add("active");
+
+  navigator.clipboard.writeText(text || '');
+
+  setTimeout(function() {
+    element.classList.remove("active");
+  }, 2500);
+}
+
+copieHash.onclick = function() {
+  copyToClipboard(copieHash, hashValue);
+}
+
+copieTxt.onclick = function() {
+  copyToClipboard(copieTxt, txt.value);
+}
+
+copieTxtHash.onclick = function() {
+  copyToClipboard(copieTxtHash, txtHash.value);
+}
