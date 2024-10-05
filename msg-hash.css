@@ -94,7 +94,7 @@ body {
     .bloc {
 
         position: relative;
-        top: 465px;
+        top: 485px;
 
     }
 
@@ -107,14 +107,22 @@ body {
     .double {
 
         flex-direction: column;
+        margin: 40px;
         margin-left: 0px;
         margin-right: 0px;
     
     }
 
+    .double:first-child {
+
+        margin: 10px;
+
+    }
+
     .double:last-child {
 
         flex-direction: row;
+        margin: 10px;
 
     }
 
