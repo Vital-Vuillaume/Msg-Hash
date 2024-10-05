@@ -93,6 +93,13 @@ body {
 
     .bloc {
 
+        position: relative;
+        top: 465px;
+
+    }
+
+    .bloc {
+
         width: 90%;
 
     }
@@ -100,6 +107,8 @@ body {
     .double {
 
         flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
     
     }
 
@@ -112,7 +121,7 @@ body {
     .input {
 
         height: 150px;
-        font-size: 1.5em;
+        font-size: 1em;
 
     }
 
