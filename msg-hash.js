@@ -28,12 +28,12 @@ txt.addEventListener("input", function() {
   try {
     let encrypted = encryptDecrypt(txt.value, hashValue);
     txtHash.value = btoa(encrypted);
-  } catch (error) {}
+  } catch {}
 });
 
 txtHash.addEventListener("input", function() {
   try {
     let decrypted = atob(txtHash.value);
     txt.value = encryptDecrypt(decrypted, hashValue);
-  } catch (error) {}
+  } catch {}
 });

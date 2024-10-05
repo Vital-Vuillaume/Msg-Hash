@@ -13,6 +13,107 @@ body {
 
     min-height: 100vh;
     color: white;
+    background-image: url(bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    font-size: 1.2em;
 
 }
 
+.bloc {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.bg {
+
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.double {
+
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    margin: 20px;
+    align-items: center;
+
+}
+
+.input {
+
+    resize: none;
+    border: none;
+    height: 70px;
+    transition: 1.5s;
+
+}
+
+.input:focus {
+
+    outline: none;
+    box-shadow: inset 0 0 0 2px rgb(240, 242, 252);
+    background-color: rgba(99, 78, 174, 0.301);
+
+}
+
+.input:-moz-placeholder {
+
+    color: white;
+
+}
+
+.input::placeholder {
+
+    color: white;
+
+}
+
+.footer {
+
+    text-decoration: none;
+    font-size: 0.9em;
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .bloc {
+
+        width: 90%;
+
+    }
+
+    .double {
+
+        flex-direction: column;
+    
+    }
+
+    .double:last-child {
+
+        flex-direction: row;
+
+    }
+
+    .input {
+
+        height: 150px;
+        font-size: 1.5em;
+
+    }
+
+ }
