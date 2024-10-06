@@ -126,12 +126,13 @@ p {
 
         position: relative;
         top: 605px;
+        width: 90%;
 
     }
 
-    .bloc {
+    p {
 
-        width: 90%;
+        width: 95%;
 
     }
 
@@ -148,26 +149,24 @@ p {
     .double:first-child {
 
         margin: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
 
     }
 
     .double:last-child {
 
         flex-direction: row;
-        margin: 10px;
+        margin: 15px;
 
     }
 
-    p {
-
-        width: 265px;
-
-    }
 
     .input {
 
         height: 150px;
         font-size: 1em;
+        width: 95%;
 
     }
 
